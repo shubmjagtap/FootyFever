@@ -1,0 +1,48 @@
+players_dict = {
+    "cristianoronaldo":"dea698d9/Cristiano-Ronaldo",
+    "carloscasemiro":"4d224fe8/Casemiro",
+    "harrykane":"21a66f6a/Harry-Kane",
+    "marcusrashford":"a1d5bd30/Marcus-Rashford",
+    "neymar":"69384e5d/Neymar",
+    "lukamodric":"6025fab1/Luka-Modric",
+    "kevindebruyne":"e46012d4/Kevin-De-Bruyne",
+    "kylianmbappe":"42fd9c7f/Kylian-Mbappe",
+    "thibautcourtois":"1840e36d/Thibaut-Courtois",
+    "joshuakimmich":"49296448/Joshua-Kimmich",
+    "antoinegriezmann":"df69b544/Antoine-Griezmann",
+    "tonikroos":"6ce1f46f/Toni-Kroos",
+    "karimbenzema":"70d74ece/Karim-Benzema",
+    "davidbeckham":"53539318/David-Beckham",
+    "waynerooney":"f07be45a/Wayne-Rooney",
+    "judebellingham":"57d88cf9/Jude-Bellingham",
+    "erlinghaaland":"1f44ac21/Erling-Haaland",
+    "jadonsancho":"dbf053da/Jadon-Sancho",
+    "lionelmessi":"d70ce98e/Lionel-Messi",
+    "diegomaradona":"a2270ea2/Diego-Maradona",
+    "sergioaguero":"4d034881/Sergio-Aguero"
+}
+
+teams_dict = {
+    "manchesterunited":"19538871/Manchester-United-Stats",
+    "manchestercity":"b8fd03ef/Manchester-City-Stats",
+    "barcelona":"206d90db/Barcelona-Stats",
+    "realmadrid":"53a2f082/Real-Madrid-Stats",
+    "psg":"e2d8892c/Paris-Saint-Germain-Stats",
+    "arsenal":"18bb7c10/Arsenal-Stats",
+    "chelsea":"cff3d9bb/Chelsea-Stats",
+    "juventus":"e0652b02/Juventus-Stats",
+    "ajax":"19c3f8c4/Ajax-Stats",
+    "bayernmunich":"054efa67/Bayern-Munich-Stats",
+    "liverpool":"822bd0ba/Liverpool-Stats",
+    "dortmund":"add600ae/Dortmund-Stats",
+    "acmilan":"dc56fe14/Milan-Stats",
+    "intermilan":"d609edc0/Internazionale-Stats",
+    "atleticomadrid":"db3b9613/Atletico-Madrid-Stats",
+    "tottenham":"361ca564/Tottenham-Hotspur-Stats",
+    "benfica":"a77c513e/Benfica-Stats",
+    "besiktas":"0f9294bd/Besiktas-Stats",
+    "galatasaray":"ecd11ca2/Galatasaray-Stats",
+    "napoli":"77897c8d/Arturo-Di-Napoli",
+    "everton":"d3fd31cc/Everton-Stats"
+}
+
