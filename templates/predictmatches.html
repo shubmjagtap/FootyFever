@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FootyFever - Predict Match</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            padding: 50px;
+            background-color: #000;
+            color: #fff;
+        }
+        h1, h2 {
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 50px;
+            text-shadow: 2px 2px #f8c400;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        input[type="text"] {
+            font-size: 1.5rem;
+            padding: 20px 30px;
+            margin-bottom: 30px;
+            background-color: #fff;
+            color: #000;
+            border-radius: 0;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: all 0.2s ease-in-out;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+            border: none;
+            width: 400px;
+            max-width: 100%;
+        }
+        button[type="submit"] {
+            font-size: 1.5rem;
+            padding: 20px 30px;
+            margin-bottom: 30px;
+            background-color: #fff;
+            color: #000;
+            border-radius: 0;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: all 0.2s ease-in-out;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+            border: none;
+            cursor: pointer;
+            width: 400px;
+            max-width: 100%;
+        }
+        button[type="submit"]:hover {
+            background-color: #f8c400;
+            color: #fff;
+            box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mb-5">FOOTYFEVER</h1>
+        <div class="row justify-content-center">
+            <h2>Enter the parameters regarding match for prediction : </h2>
+            <form action="" method="post">
+                {% csrf_token %}
+
+                
+                <input type="text" id="team_code" name="team_code" placeholder="Home Team Name" title="This predictor represents the code assigned to the team playing the match. The code is generated using the categorical data present in the 'Team' column of the dataset.">
+                
+                <input type="text" id="opp_code" name="opp_code" placeholder="Away Team Name" title="This predictor represents the code assigned to the opponent team playing against the team specified in the 'team_code' predictor. The code is generated using the categorical data present in the 'Team' column of the dataset." >
+
+                <input type="text" id="venue_code" name="venue_code" placeholder="Home or Away" title="This predictor represents the code assigned to the venue where the match is being played. The code is generated using the categorical data present in the 'Venue' column of the dataset." >
+                
+                <input type="text" id="day_code" name="day_code" placeholder="Day of Week" title="This predictor represents the code assigned to the day of the week when the match is being played. The code is generated using the 'Date' column of the dataset, which provides information about the day of the week for each match." >
+
+                <input type="text" id="hour" name="hour" placeholder="Hour of Day" title="This predictor represents the hour of the day when the match is being played. The hour is extracted from the 'Time' column of the dataset, which provides information about the start time of each match." >
+                
+                <input type="text" id="GF" name="GF" placeholder="GF" title="This predictor represents the number of goals scored by the team specified in the 'team_code' predictor during the match." >
+                    
+                <input type="text" id="xG" name="xG" placeholder="xG" title="This predictor represents the expected number of goals that the team specified in the 'team_code' predictor is likely to score during the match, based on various factors such as team performance, player form, etc." >
+                    
+                <input type="text" id="xGA" name="xGA" placeholder="xGA" title="This predictor represents the expected number of goals that the opposing team is likely to score against the team specified in the 'team_code' predictor during the match, based on various factors such as team performance, player form, etc." >
+                    
+                <input type="text" id="SoT" name="SoT" placeholder="SoT" title="This predictor represents the number of shots on target taken by the team specified in the 'team_code' predictor during the match." >
+                    
+
+                <button type="submit">Predict</button>
+            </form>
+        </div>
+        <!-- Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </div>
+</body>
+</html>

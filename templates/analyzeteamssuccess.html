@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FootyFever - Analyze Success</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            padding: 50px;
+            background-color: #000;
+            color: #fff;
+        }
+        h1, h2 {
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 50px;
+            text-shadow: 2px 2px #f8c400;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 0 auto;
+            display: block;
+            border: 2px solid #f8c400;
+            box-shadow: 2px 2px #f8c400;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mb-5">FOOTYFEVER</h1>
+        <div class="row justify-content-center">
+            <div class="col-sm-6">
+                <h2>{{team}}</h2>
+                <img src="data:image/jpeg;base64,{{ image_str }}" alt="my_image">
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

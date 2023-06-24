@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FootyFever - Analyze Teams</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            padding: 50px;
+            background-color: #000;
+            color: #fff;
+        }
+        h1, h2 {
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 50px;
+            text-shadow: 2px 2px #f8c400;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        input[type="text"] {
+            font-size: 1.5rem;
+            padding: 20px 30px;
+            margin-bottom: 30px;
+            background-color: #fff;
+            color: #000;
+            border-radius: 0;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: all 0.2s ease-in-out;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+            border: none;
+            width: 400px;
+            max-width: 100%;
+        }
+        button[type="submit"] {
+            font-size: 1.5rem;
+            padding: 20px 30px;
+            margin-bottom: 30px;
+            background-color: #fff;
+            color: #000;
+            border-radius: 0;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: all 0.2s ease-in-out;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+            border: none;
+            cursor: pointer;
+            width: 400px;
+            max-width: 100%;
+        }
+        button[type="submit"]:hover {
+            background-color: #f8c400;
+            color: #fff;
+            box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mb-5">FOOTYFEVER</h1>
+        <div class="row justify-content-center">
+            <div class="col-sm-6">    
+                <form action="" method="post">
+                        {% csrf_token %}
+                        <input type="text" id="team1name" name="team1name" placeholder="enter team 1">
+                        <input type="text" id="team2name" name="team2name" placeholder="enter team 2">
+                        <button type="submit">Analyze</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
